@@ -1,0 +1,33 @@
+{
+  "data": [
+    {
+      "id": "01",
+      "name": "Vanúbia Xavier",
+      "metadata": {
+        "title": "Vanúbia Xavier | Cabeleireira",
+        "description": "Transformando você na sua melhor versão."
+      },
+      "bio": "Esteticista apaixonada pela área capilar! Transformando você na sua melhor versão! Lembre-se sempre: Se nada mudar! mude você.",
+      "image": "/images/vanubia-xavier-image.png",
+      "username": "vanubia-xavier",
+      "color": "#8F6566",
+      "links": [
+        {
+          "icon": "whatsapp",
+          "label": "whatsapp",
+          "value": "https://wa.me/5565992700066"
+        },
+        {
+          "icon": "instagram",
+          "label": "instagram",
+          "value": "https://www.instagram.com/vanubia_xavier_/"
+        },
+        {
+          "icon": "about",
+          "label": "sobre mim",
+          "value": "https://gibify.app/vanubia-xavier"
+        }
+      ]
+    }
+  ]
+}
