@@ -1,24 +1,26 @@
 'use client'
-import { usePathname } from 'next/navigation'
-import LogoSquare from '../logo-square'
+import { Menu } from '@/types/user'
 
-export default function Header() {
-  const pathname = usePathname()
-
+type HeaderProps = {
+  name: string;
+  menu: Menu[] | null;
+  username: string;
+}
+export default function Header({ name, username, menu }: HeaderProps) {
   return (
     <>
-      {pathname !== '/' ? (
-        <></>
-      ) : (
-        <header className="flex items-center justify-between w-full border-b border-neutral-200 dark:border-neutral-700 p-8 fixed backdrop-blur-sm">
-          <div className="flex items-center text-sm font-medium uppercase gap-2">
-            <LogoSquare size="sm" />
-            <p>
-              gibify<span className="text-green-500 ml-1">.link</span>
-            </p>
+      <header id="home" className="flex flex-col w-full">
+        <div className="shadow-md">
+          <div className="flex flex-row md:justify-between justify-center items-center max-w-5xl w-full mx-auto h-16">
+            <div className="font-semibold text-gray-800">{name}</div>
+            <nav className="items-center mt-8 mb-4 lg:m-0 lg:ml-auto space-x-6 hidden md:block">
+              {menu?.length ? menu.map((link, index) => (
+                <a key={index} href={`/${username}/#${link.label}`} className="cursor-pointer text-xs uppercase">{link.label}</a>
+              )) : null}
+            </nav>
           </div>
-        </header>
-      )}
+        </div>
+      </header>
     </>
   )
 }

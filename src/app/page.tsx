@@ -29,23 +29,15 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function HomePage() {
   return (
     <div id="landingpage" className="flex flex-col w-full">
-      <a
-        href="https://wa.me/message/XUJCDWE7XTRKN1"
-        target="_blank"
-        className="whatsapp-button text-black font-bold py-2 px-4 rounded fixed bottom-4 right-4"
-      >
-        <WhtasappIcon />
-      </a>
-
       <header id="home" className="flex flex-col w-full">
         <div className="shadow-md">
           <div className="flex flex-row md:justify-between justify-center items-center max-w-5xl w-full mx-auto h-16">
             <div className="font-semibold text-gray-800">Nayra Fisioterapeuta</div>
             <nav className="items-center mt-8 mb-4 lg:m-0 lg:ml-auto space-x-6 hidden md:block">
-              <a className="cursor-pointer">Sobre</a>
-              <a className="cursor-pointer">Serviços</a>
-              <a className="cursor-pointer">Dúvidas</a>
-              <a className="cursor-pointer">Contatos</a>
+              <a href='#sobre' className="cursor-pointer">Sobre</a>
+              <a href='#servicos' className="cursor-pointer">Serviços</a>
+              <a href='#duvidas' className="cursor-pointer">Dúvidas</a>
+              <a href='#contato' className="cursor-pointer">Contatos</a>
             </nav>
           </div>
         </div>
@@ -96,7 +88,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-24">
+      <section id="sobre" className="py-24">
         <div className="flex flex-col md:flex-row justify-between items-center max-w-5xl mx-auto">
           <div className="w-full md:w-1/2 p-4">
             <h2 className="md:text-4xl text-base font-semibold text-gray-800">
@@ -141,7 +133,7 @@ export default function HomePage() {
           </a>
         </div>
       </section>
-      <section id="duvida" className="py-24 bg-white">
+      <section id="duvidas" className="py-24 bg-white">
         <h1 className="text-3xl font-extrabold text-center m-6">Dúvidas frequentes</h1>
 
         <div className="flex flex-col justify-between items-center max-w-5xl gap-4 mx-auto mt-4">

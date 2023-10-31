@@ -1,7 +1,5 @@
-export interface Link {
-  icon: string
+export interface Menu {
   label: string
-  value: string
 }
 
 export interface User {
@@ -15,5 +13,5 @@ export interface User {
   image: string
   username: string
   color: string
-  links: Link[]
+  menu: Menu[]
 }
