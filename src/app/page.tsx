@@ -1,4 +1,3 @@
-import WhtasappIcon from '@/components/icons/whatsapp'
 import { Metadata } from 'next'
 import Image from 'next/image'
 export const runtime = 'edge'
