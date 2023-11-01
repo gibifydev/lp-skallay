@@ -2,6 +2,11 @@ export interface Menu {
   label: string
 }
 
+export interface IQuestionsAndAnswers {
+  id: string;
+  question: string;
+  answer: string;
+}
 export interface User {
   id: string
   name: string

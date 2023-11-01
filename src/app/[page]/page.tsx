@@ -7,6 +7,7 @@ import { Banner } from '@/components/banner'
 import { About } from '@/components/about'
 import { Services } from '@/components/service'
 import { Highlight } from '@/components/highlight'
+import { QuestionsAndAnswers } from '@/components/questions-and-answers'
 
 export const runtime = 'edge'
 export async function generateMetadata({
@@ -87,6 +88,10 @@ export default async function Page({ params }: { params: { page: string } }) {
         highlight_button_link={page.whatsapp_link}
         highlight_description_color=''
         highlight_title_color={page.highlight_section.title_color}
+      />
+
+      <QuestionsAndAnswers
+        questions_and_answers={page.questions_and_answers || []}
       />
 
       {page.whatsapp_link ? <WhatsappButton whatsapp_link={page.whatsapp_link} /> : null}
