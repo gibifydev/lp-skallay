@@ -4,7 +4,7 @@ type BannerProps = {
   banner_desktop_image: string;
   banner_mobile_image: string;
 }
-export default function Banner({ banner_desktop_image, banner_mobile_image }: BannerProps) {
+export function Banner({ banner_desktop_image, banner_mobile_image }: BannerProps) {
   return (
     <section className="flex flex-col md:flex-row justify-between items-center mx-auto">
       <Image

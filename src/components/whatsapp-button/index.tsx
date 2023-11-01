@@ -1,7 +1,7 @@
 'use client'
 import WhtasappIcon from '../icons/whatsapp'
 
-export default function WhatsappButton({ whatsapp_link }: { whatsapp_link: string }) {
+export function WhatsappButton({ whatsapp_link }: { whatsapp_link: string }) {
   return (
     <a
       href={whatsapp_link}

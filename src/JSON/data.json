@@ -8,16 +8,34 @@
       "whatsapp_link": "https://wa.me/message/XUJCDWE7XTRKN1",
       "banner_desktop_image": "/images/banner_desktop_image.png",
       "banner_mobile_image": "/images/banner_mobile_image.png",
+      "header": {
+        "bg_color": "#FFFFFF",
+        "text_color": "#222222"
+      },
       "service_section": {
+        "bg_color": "#FFFFFF",
+        "description_color": "#222222",
         "description": " Avaliação e tratamento especializado para lesões e recuperações ortopédicas, Pré e Pós-operatório de cirurgias plásticas, prevenção e cuidado da saúde do idoso, terapias manuais, tratamento e acompanhamento visando o sistema respiratório, o desenvolvimento motor e funcional de crianças.",
         "button_label": "agendar consulta",
-        "service_button_bg_color": "#3F6212",
-        "service_button_label_color": "#FFFFFF"
+        "button_bg_color": "#3F6212",
+        "button_label_color": "#FFFFFF"
       },
       "about_section": {
+        "bg_color": "#FFFFFF",
+        "title_color": "#222222",
+        "description_color": "#222222",
         "image_url": "/images/about_image.png",
         "title": "Quem é Nayra Araújo",
         "description": "Olá, me chamo Nayra Araújo e atuo como fisioterapeuta na região de São Luis e Chapadinha no Estado do Maranhão. Formada em Fisioterapia pelo SEST SENAT e especializada em ortopedia e traumatologia e pré e pós-operatório de cirurgias plásticas. Meu propósito é auxiliar no tratamento da dor e prevenção das condições físicas de adultos e crianças para uma melhor qualidade de vida."
+      },
+      "highlight_section": {
+        "bg_color": "#EEEEEE",
+        "title": "Atendimento à Domicilio e Online",
+        "title_color": "#222222",
+        "description": "Em São Luis e Chapadinha no Estado do Maranhão.",
+        "button_label": "agendar consulta",
+        "button_bg_color": "#222222",
+        "button_label_color": "#FFFFFF"
       },
       "social_media": [
         {
@@ -42,7 +60,11 @@
         {
           "label": "contatos"
         }
-      ]
+      ],
+      "analytics": {
+        "google_tag_manager": "",
+        "facebook_pixel": ""
+      }
     }
   ]
 }

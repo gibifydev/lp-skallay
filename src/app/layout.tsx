@@ -13,12 +13,6 @@ export const metadata: Metadata = {
     follow: true,
     index: true
   },
-  verification: {
-    google: 'NZ-zRsj3eU2EdmeG8llgzrBIHSozkP7W9illfOmVr0M',
-    other: {
-      'facebook-domain-verification': 'alnqlc2yhr8rblyge29wouyoon2483'
-    }
-  }
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

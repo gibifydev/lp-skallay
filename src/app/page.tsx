@@ -1,5 +1,4 @@
 import { Metadata } from 'next'
-import Image from 'next/image'
 export const runtime = 'edge'
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -21,6 +20,12 @@ export async function generateMetadata(): Promise<Metadata> {
       description: 'Simplificando a maneira de compartilhar seus links na internet.',
       site: 'https://gibify.link',
       images: '/images/gibify-link-logo.png'
+    },
+    verification: {
+      google: 'NZ-zRsj3eU2EdmeG8llgzrBIHSozkP7W9illfOmVr0M',
+      other: {
+        'facebook-domain-verification': 'alnqlc2yhr8rblyge29wouyoon2483'
+      }
     }
   }
 }
@@ -28,110 +33,8 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function HomePage() {
   return (
     <div id="landingpage" className="flex flex-col w-full">
-      <header id="home" className="flex flex-col w-full">
-        <div className="shadow-md">
-          <div className="flex flex-row md:justify-between justify-center items-center max-w-5xl w-full mx-auto h-16">
-            <div className="font-semibold text-gray-800">Nayra Fisioterapeuta</div>
-            <nav className="items-center mt-8 mb-4 lg:m-0 lg:ml-auto space-x-6 hidden md:block">
-              <a href='#sobre' className="cursor-pointer">Sobre</a>
-              <a href='#servicos' className="cursor-pointer">Serviços</a>
-              <a href='#duvidas' className="cursor-pointer">Dúvidas</a>
-              <a href='#contato' className="cursor-pointer">Contatos</a>
-            </nav>
-          </div>
-        </div>
-      </header>
 
-      <section>
-        <div className="flex flex-col md:flex-row justify-between items-center mx-auto">
-          <div className="w-full">
-            <Image
-              src="/images/banner_nayara.png"
-              alt="Card cover image"
-              className="hidden md:block max-w-full h-auto"
-              width={1800}
-              height={900}
-              priority
-              quality={100}
-            />
-            <Image
-              src="/images/banner_nayara_mobi.png"
-              alt="Card cover image"
-              className="block md:hidden max-w-full h-auto"
-              width={1800}
-              height={900}
-              priority
-              quality={100}
-            />
-          </div>
-        </div>
-      </section>
 
-      <section className="py-8 shadow-md">
-        <div className="flex flex-col items-center w-full max-w-5xl mx-auto text-center">
-          <div className="md:text-2xl text-base p-2 text-gray-600">
-            <p>
-              Avaliação e tratamento especializado para lesões e recuperações ortopédicas, Pré e
-              Pós-operatório de cirurgias plásticas, prevenção e cuidado da saúde do idoso, terapias
-              manuais, tratamento e acompanhamento visando o sistema respiratório, o desenvolvimento
-              motor e funcional de crianças.
-            </p>
-          </div>
-          <a
-            href="https://wa.me/message/XUJCDWE7XTRKN1"
-            className="mt-4 px-12 text-white bg-lime-800 rounded-full p-4"
-            target="_blank"
-          >
-            AGENDAR CONSULTA
-          </a>
-        </div>
-      </section>
-
-      <section id="sobre" className="py-24">
-        <div className="flex flex-col md:flex-row justify-between items-center max-w-5xl mx-auto">
-          <div className="w-full md:w-1/2 p-4">
-            <h2 className="md:text-4xl text-base font-semibold text-gray-800">
-              Quem é Nayra Araújo
-            </h2>
-            <p className="mt-4 md:text-2xl text-base text-gray-600">
-              Olá, me chamo Nayra Araújo e atuo como fisioterapeuta na região de São Luis e
-              Chapadinha no Estado do Maranhão. Formada em Fisioterapia pelo SEST SENAT e
-              especializada em ortopedia e traumatologia e pré e pós-operatório de cirurgias
-              plásticas. Meu propósito é auxiliar no tratamento da dor e prevenção das condições
-              físicas de adultos e crianças para uma melhor qualidade de vida.
-            </p>
-          </div>
-          <div className="w-full md:w-1/3 p-4">
-            <Image
-              src="/images/sobre_nayara.png"
-              alt="Card cover image"
-              className="object-cover ng-tns-c1318422951-24 ng-star-inserted"
-              width={1800}
-              height={900}
-              priority
-              quality={100}
-            />
-          </div>
-        </div>
-      </section>
-
-      <section className="px-2 py-10 sm:py-12 sm:px-16 text-base  shadow-md bg-[#EEEEEE]">
-        <div className="flex flex-col items-center w-full max-w-7xl mx-auto text-center">
-          <div className="text-3xl sm:text-5xl font-extrabold leading-6 sm:leading-10">
-            Atendimento à Domicilio e Online
-          </div>
-          <div className="mt-2 text-3xl font-extrabold leading-6 sm:leading-10 text-opacity-70">
-            Em São Luis e Chapadinha no Estado do Maranhão.
-          </div>
-          <a
-            href="https://wa.me/message/XUJCDWE7XTRKN1"
-            className="mt-4 px-12 text-white bg-lime-800 rounded-full p-4"
-            target="_blank"
-          >
-            AGENDAR CONSULTA
-          </a>
-        </div>
-      </section>
       <section id="duvidas" className="py-24 bg-white">
         <h1 className="text-3xl font-extrabold text-center m-6">Dúvidas frequentes</h1>
 
