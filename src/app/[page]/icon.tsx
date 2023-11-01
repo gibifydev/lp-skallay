@@ -31,6 +31,7 @@ export default function Icon({
           alignItems: 'center',
           justifyContent: 'center',
           color: 'black',
+          textTransform: 'uppercase'
         }}
       >
         {name[0].charAt(0)}

@@ -9,8 +9,8 @@
       "banner_desktop_image": "/images/banner_desktop_image.png",
       "banner_mobile_image": "/images/banner_mobile_image.png",
       "header": {
-        "bg_color": "#FFFFFF",
-        "text_color": "#222222"
+        "bg_color": "#222222",
+        "text_color": "#FFFFFF"
       },
       "service_section": {
         "bg_color": "#FFFFFF",
