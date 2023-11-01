@@ -7,7 +7,7 @@ type QuestionsAndAnswersProps = {
   questions_and_answers: IQuestionsAndAnswers[]
 }
 export function QuestionsAndAnswers({ questions_and_answers }: QuestionsAndAnswersProps) {
-  const [isOpen, setIsOpen] = useState<boolean>(true);
+  const [isOpen, setIsOpen] = useState<boolean>(false);
 
   if (!questions_and_answers.length) return null;
 
@@ -18,9 +18,9 @@ export function QuestionsAndAnswers({ questions_and_answers }: QuestionsAndAnswe
           key={item.id}
           isOpen={isOpen}
           setOpen={() => setIsOpen(!isOpen)}
-          className='w-full max-w-5xl mx-auto focus:border-none outline-none'
+          className='w-full max-w-5xl mx-auto'
         >
-          <Accordion.Title className='text-lg font-semibold'>{item.question}</Accordion.Title>
+          <Accordion.Title className='text-lg font-semibold focus:ring-0'>{item.question}</Accordion.Title>
           <Accordion.Content className='text-base'>{item.answer}</Accordion.Content>
         </Accordion.Panel>
       ))}
