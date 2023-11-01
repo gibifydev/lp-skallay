@@ -35,7 +35,8 @@
         "description": "Em São Luis e Chapadinha no Estado do Maranhão.",
         "button_label": "agendar consulta",
         "button_bg_color": "#222222",
-        "button_label_color": "#FFFFFF"
+        "button_label_color": "#FFFFFF",
+        "description_color": "#222222"
       },
       "questions_and_answers": [
         {

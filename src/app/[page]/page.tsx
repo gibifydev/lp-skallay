@@ -86,7 +86,7 @@ export default async function Page({ params }: { params: { page: string } }) {
         highlight_button_label={page.highlight_section.button_label}
         highlight_button_label_color={page.highlight_section.button_label_color}
         highlight_button_link={page.whatsapp_link}
-        highlight_description_color=''
+        highlight_description_color={page.highlight_section.description_color}
         highlight_title_color={page.highlight_section.title_color}
       />
 

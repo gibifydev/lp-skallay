@@ -12,7 +12,7 @@ export function QuestionsAndAnswers({ questions_and_answers }: QuestionsAndAnswe
   if (!questions_and_answers.length) return null;
 
   return (
-    <Accordion id="dúvidas" className='my-8 w-[800px] mx-4'>
+    <Accordion id="dúvidas" className='my-8 w-full md:w-[700px] mx-4'>
       {questions_and_answers.map((item) => (
         <Accordion.Panel
           key={item.id}
