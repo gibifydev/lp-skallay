@@ -6,7 +6,10 @@ type BannerProps = {
 }
 export function Banner({ banner_desktop_image, banner_mobile_image }: BannerProps) {
   return (
-    <section className="flex flex-col md:flex-row justify-between items-center mx-auto">
+    <section
+      id='home'
+      className="flex flex-col md:flex-row justify-between items-center mx-auto"
+    >
       <Image
         src={banner_desktop_image}
         alt="Card cover image"

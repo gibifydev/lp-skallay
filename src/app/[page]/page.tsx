@@ -8,6 +8,7 @@ import { About } from '@/components/about'
 import { Services } from '@/components/service'
 import { Highlight } from '@/components/highlight'
 import { QuestionsAndAnswers } from '@/components/questions-and-answers'
+import { Footer } from '@/components/footer'
 
 export const runtime = 'edge'
 export async function generateMetadata({
@@ -25,7 +26,7 @@ export async function generateMetadata({
     description: page.about_section.description,
     openGraph: {
       type: 'website',
-      url: 'https://skalaai.com.br',
+      url: 'https://skalaai.com',
       siteName: 'Skalaai',
       title,
       description: page.about_section.description,
@@ -34,7 +35,7 @@ export async function generateMetadata({
     twitter: {
       card: 'summary_large_image',
       creator: '@gibifydev',
-      site: 'https://skalaai.com.br',
+      site: 'https://skalaai.com',
       title,
       description: page.about_section.description,
       images: page.about_section.image_url
@@ -53,7 +54,7 @@ export default async function Page({ params }: { params: { page: string } }) {
       <Header
         header_bg_color={page.header.bg_color}
         header_text_color={page.header.text_color}
-        menu={page.menu ? page.menu : null}
+        header_menu={page.menu ? page.menu : null}
         name={page.name}
         username={page.username}
       />
@@ -94,7 +95,15 @@ export default async function Page({ params }: { params: { page: string } }) {
         questions_and_answers={page.questions_and_answers || []}
       />
 
-      {page.whatsapp_link ? <WhatsappButton whatsapp_link={page.whatsapp_link} /> : null}
+      <Footer
+        footer_bg_color='#333'
+        footer_text_color='#fff'
+        footer_social_media={page.social_media || []}
+        footer_menu={page.menu || []}
+        username={page.username}
+      />
+
+      <WhatsappButton whatsapp_link={page.whatsapp_link} />
     </>
   )
 }

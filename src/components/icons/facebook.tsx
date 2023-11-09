@@ -1,4 +1,4 @@
-export default function FacebookIcon() {
+export function FacebookIcon() {
   return (
     <svg
       viewBox="0 0 24 24"

@@ -9,8 +9,8 @@
       "banner_desktop_image": "/images/banner_desktop_image.png",
       "banner_mobile_image": "/images/banner_mobile_image.png",
       "header": {
-        "bg_color": "#222222",
-        "text_color": "#FFFFFF"
+        "bg_color": "#333",
+        "text_color": "#FFF"
       },
       "service_section": {
         "bg_color": "#FFFFFF",
@@ -73,25 +73,33 @@
       "social_media": [
         {
           "label": "facebook",
-          "value": ""
+          "value": "https://www.facebook.com/@username/"
         },
         {
           "label": "instagram",
-          "value": ""
+          "value": "https://www.instagram.com/@username/"
         }
       ],
       "menu": [
         {
+          "id": "home",
+          "label": "home"
+        },
+        {
+          "id": "about",
           "label": "sobre"
         },
         {
+          "id": "service",
           "label": "serviços"
         },
         {
+          "id": "question",
           "label": "dúvidas"
         },
         {
-          "label": "contatos"
+          "id": "contact",
+          "label": "contato"
         }
       ],
       "analytics": {
