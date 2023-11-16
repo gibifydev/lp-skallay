@@ -21,7 +21,7 @@ export function About({
       style={{
         backgroundColor: about_bg_color,
       }}
-      id="sobre"
+      id="about"
       className="py-24 w-full"
     >
       <div className="flex flex-col md:flex-row justify-between items-center max-w-5xl mx-auto">

@@ -1,5 +1,10 @@
 export interface Menu {
+  id: string;
   label: string
+}
+export interface SocialMedia {
+  label: string
+  value: string
 }
 
 export interface IQuestionsAndAnswers {
@@ -19,4 +24,5 @@ export interface User {
   username: string
   color: string
   menu: Menu[]
+  social_media: SocialMedia[];
 }
